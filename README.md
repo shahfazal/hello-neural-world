@@ -29,7 +29,7 @@ Three trained models available on Hugging Face:
 
 ## Blog Post
 
-Read the full learning journey: [Coming soon on Medium]
+Read the full learning journey: [Medium](https://medium.com/@shahfazal/tinynet-the-story-of-a-neural-nudge-7de8def8aacd)
 
 ## Tech Stack
 
