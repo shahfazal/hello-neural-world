@@ -23,9 +23,9 @@ jupyter notebook runbooks/tinynet_discovery.ipynb
 
 Three trained models available on Hugging Face:
 
-- [tinynet-sigmoid-baseline](https://huggingface.co/[username]/tinynet-sigmoid-baseline) - Discovery model (overfits)
-- [tinynet-relu-v1](https://huggingface.co/[username]/tinynet-relu-v1) - ReLU upgrade
-- [tinynet-v3-regularized](https://huggingface.co/[username]/tinynet-v3-regularized) - Final model with weight decay
+- [tinynet-sigmoid-baseline](https://huggingface.co/shahfazal/tinynet-sigmoid-baseline) - Sigmoid + Noise baseline
+- [tinynet-relu-v1](https://huggingface.co/shahfazal/tinynet-relu-v1) - ReLU activation upgrade
+- [tinynet-relu-v2-regularized](https://huggingface.co/shahfazal/tinynet-relu-v2-regularized) - ReLU model with Adam + weight decay
 
 ## Blog Post
 
