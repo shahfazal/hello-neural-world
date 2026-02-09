@@ -1,0 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local models and checkpoints
+*.pth
+*.safetensors
+*.onnx
+models/
+
+# Experiments & Logging
+wandb/
+.ipynb_checkpoints/
+
+# Environments
+.venv/
+env/
+venv/
+ENV/
+.env
+.env.local
+
+# Mac stuff
+.DS_Store
+
+# Claude memory (personal notes)
+.claude/

@@ -1,0 +1,8 @@
+torch
+safetensors
+wandb
+matplotlib
+seaborn
+ipykernel
+pandas
+huggingface_hub
