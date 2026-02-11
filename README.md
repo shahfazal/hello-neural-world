@@ -1,39 +1,44 @@
-# Hello Neural World
+# Hello Neural World (TinyNet)
 
-A minimal neural network learning project with a 4→3→2 architecture. Learn backpropagation, overfitting, and generalization through hands-on experimentation.
+**A minimal neural network learning project designed to demystify the "Black Box" of ML.**
+
+This repository follows my journey of scaling down complexity to understand the **Neural Nudge**—the fundamental mechanics of how a network learns when it is told it is wrong. By using a minimalist **4→3→2 architecture** (just 23 parameters), every gradient update and weight shift becomes trackable and deterministic.
+
+![Image of the TinyNet 3-layer architecture with 4→3→2 nodes](img/tinynet-arch.png)
 
 ## What's Inside
 
-- **2 Jupyter Notebooks**: Step-by-step tutorials from basics to generalization
-- **Python Package**: Reusable training engine, models, and data utilities
-- **3 Trained Models**: Published on Hugging Face with full documentation
+- **2 Interactive Runbooks**: Detailed Jupyter notebooks that move from the "Spatial Logic" of 2x2 grids to the core math of backpropagation.
+- **The Engine**: A modular Python package containing reusable training loops, model definitions, and data utilities.
+- **3 Trained Models**: Versions of TinyNet published on Hugging Face, documenting the evolution from overfitting to generalization.
 
-## Quick Start
+## The Runbooks
 
-```bash
-pip install -r requirements.txt
-jupyter notebook runbooks/tinynet_discovery.ipynb
-```
+1. **`tinynet_discovery.ipynb`**: Learn how backpropagation works by observing the "Neural Nudge" in a controlled, 4-pixel environment.
+2. **`tinynet_trainer.ipynb`**: Explore the "Messy Middle" of ML. Fix overfitting by implementing dynamic noise, ReLU upgrades, and Adam optimization.
 
-**Notebooks:**
-1. [tinynet_discovery.ipynb](runbooks/tinynet_discovery.ipynb) - Learn how backpropagation works
-2. [tinynet_trainer.ipynb](runbooks/tinynet_trainer.ipynb) - Fix overfitting with noise and regularization
+## Models (Hugging Face)
 
-## Models
+Explore the evolution of the 23-parameter model:
 
-Three trained models available on Hugging Face:
+- **`tinynet-sigmoid-baseline`**: The initial baseline demonstrating false confidence and "vertical bias".
+- **`tinynet-relu-v1`**: A transition to modern activation functions.
+- **`tinynet-relu-v2-regularized`**: The final iteration utilizing Adam and weight decay to achieve true generalization.
 
-- [tinynet-sigmoid-baseline](https://huggingface.co/shahfazal/tinynet-sigmoid-baseline) - Sigmoid + Noise baseline
-- [tinynet-relu-v1](https://huggingface.co/shahfazal/tinynet-relu-v1) - ReLU activation upgrade
-- [tinynet-relu-v2-regularized](https://huggingface.co/shahfazal/tinynet-relu-v2-regularized) - ReLU model with Adam + weight decay
-
-## Blog Post
-
-Read the full learning journey: [Medium](https://medium.com/@shahfazal/tinynet-the-story-of-a-neural-nudge-7de8def8aacd)
+![Image showing loss curve comparison of the 3 models](img/loss.png)
 
 ## Tech Stack
 
-PyTorch · Safetensors · Weights & Biases · Jupyter
+- **PyTorch**: Foundational model architecture and training.
+- **Safetensors**: Secure, deterministic model persistence.
+- **Weights & Biases**: Experiment tracking and "Neural Nudge" visualization.
+- **Jupyter**: Interactive research and documentation.
+
+## The Journey
+
+This project is the foundational "Spatial" phase of a larger evolution. Read the full story on **[Medium](https://medium.com/@shahfazal/tinynet-the-story-of-a-neural-nudge-7de8def8aacd)**.
+
+**Current Focus**: I am currently taking these principles **NYC-scale**—building from-scratch LSTMs to forecast EV charger demand across New York City municipal lots.
 
 ## License
 
